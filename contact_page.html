@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/design.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="assets/logo.jpg" alt="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="category_page.html">Cooking</a>
+            <a href="category_page.html">Business</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <form method="get" action="#">
+            <div class="form_label">
+                <label for="contact_pupose">Contact purpose: </label>
+            </div>
+            <div class="form_field">
+                <select name="contact_purpose" id="contact_pupose" required>
+                    <option value="sell_books">I want to sell books</option>
+                    <option value="buy_books">I want to buy books</option>
+                </select>
+            </div>
+
+            <div class="form_label">
+                <label for="name">Your name: </label>
+            </div>
+            <div class="form_field">
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form_label">
+                <label for="email">Your email: </label>
+            </div>
+            <div class="form_field">
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form_label">
+                <label for="phone">Your phone number: </label>
+            </div>
+            <div class="form_field">
+                <input type="tel" id="phone" name="phone" pattern="^[0-9]{1,10}$" required>
+            </div>
+
+            <div class="form_label">
+                <label for="contact_method">How can we contact you: </label>
+            </div>
+            <div class="form_field"> 
+                <input type="checkbox" id="contact_method_email" name="contact_method[]">
+                <label for="contact_method_email">By email</label>
+                <input type="checkbox" id="contact_method_phone" name="contact_method[]">
+                <label for="contact_method_phone">By phone</label>
+            </div>
+
+            <div class="form_label">
+                <label>Do you want to receive our weekly newsletter: </label>
+            </div>
+            <div class="form_field">
+                <input type="radio" id="yes" name="receive_newsletter" checked>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="receive_newsletter">
+                <label for="no">No</label>
+            </div>
+
+            <div class="form_label">
+                <label for="note">Note: </label>
+            </div>
+            <div class="form_field">
+                <textarea name="note" id="note" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main><br>
+
+    <footer>
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Copyright</a>
+            <a href="contact_page.html">Contact Us</a>
+        </nav>
+    </footer>
+</body>
+</html>
